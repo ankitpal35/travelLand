@@ -48,7 +48,6 @@ const getForecast = async () => {
   }
 }
 
-
 // Render functions
 const renderVenues = (venues) => {
   $venueDivs.forEach(($venue, index) => {
@@ -77,5 +76,4 @@ const executeSearch = () => {
   getForecast().then(forecast => renderForecast(forecast));
   return false;
 }
-
 $submit.click(executeSearch)
